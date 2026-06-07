@@ -9,7 +9,57 @@
     <managingEditor>npodoba2@gmail.com (Neil Podoba)</managingEditor>
     <webMaster>npodoba2@gmail.com (Neil Podoba)</webMaster>
     <copyright>© 2026 Neil Podoba</copyright>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <author>npodoba2@gmail.com (Neil Podoba)</author>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Homelab</title>
+      <link>http://localhost:1313/tags/homelab/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <author>npodoba2@gmail.com (Neil Podoba)</author>
+      <guid>http://localhost:1313/tags/homelab/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Infrastructure</title>
+      <link>http://localhost:1313/tags/infrastructure/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <author>npodoba2@gmail.com (Neil Podoba)</author>
+      <guid>http://localhost:1313/tags/infrastructure/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <author>npodoba2@gmail.com (Neil Podoba)</author>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>http://localhost:1313/tags/raspberry-pi/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <author>npodoba2@gmail.com (Neil Podoba)</author>
+      <guid>http://localhost:1313/tags/raspberry-pi/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

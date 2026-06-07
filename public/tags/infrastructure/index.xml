@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Neils Tech Blog on Neil&#39;s Tech Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Neils Tech Blog on Neil&#39;s Tech Blog</description>
+    <title>Infrastructure on Neil&#39;s Tech Blog</title>
+    <link>http://localhost:1313/tags/infrastructure/</link>
+    <description>Recent content in Infrastructure on Neil&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>npodoba2@gmail.com (Neil Podoba)</managingEditor>
     <webMaster>npodoba2@gmail.com (Neil Podoba)</webMaster>
     <copyright>© 2026 Neil Podoba</copyright>
-    <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Raspberry Pi 4 Provisioning SOP</title>
