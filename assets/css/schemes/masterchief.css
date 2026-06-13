@@ -1,0 +1,13 @@
+:root {
+  --color-primary-50: 236 242 228;
+  --color-primary-100: 213 227 196;
+  --color-primary-200: 185 207 156;
+  --color-primary-300: 151 182 110;
+  --color-primary-400: 118 158 69;
+  --color-primary-500: 88 130 46;
+  --color-primary-600: 67 104 34;
+  --color-primary-700: 50 80 24;
+  --color-primary-800: 35 58 16;
+  --color-primary-900: 20 36 8;
+  --color-primary-950: 10 20 4;
+}
