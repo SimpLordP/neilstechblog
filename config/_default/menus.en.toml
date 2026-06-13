@@ -4,8 +4,8 @@
   weight = 10
 
 [[main]]
-  name = "Homelab"
-  pageRef = "posts"
+  name = "AWS"
+  pageRef = "aws"
   weight = 20
 
 [[main]]
@@ -14,11 +14,16 @@
   weight = 30
 
 [[main]]
-  name = "AWS"
-  pageRef = "aws"
+  name = "Homelab"
+  pageRef = "homelab"
   weight = 40
+
+[[main]]
+  name = "Networking"
+  pageRef = "networking"
+  weight = 50
 
 [[main]]
   name = "15-Min Teardowns"
   pageRef = "15min-teardowns"
-  weight = 50
+  weight = 60

@@ -15,8 +15,8 @@
 
   
   
-    <title>Raspberry Pi 4 Provisioning SOP &middot; Neil&#39;s Tech Blog</title>
-    <meta name="title" content="Raspberry Pi 4 Provisioning SOP &middot; Neil&#39;s Tech Blog">
+    <title>Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning &middot; Neil&#39;s Tech Blog</title>
+    <meta name="title" content="Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning &middot; Neil&#39;s Tech Blog">
   
 
   
@@ -31,14 +31,14 @@
     
   
   
-    <meta name="description" content="A production-grade standard operating procedure for provisioning Raspberry Pi 4 nodes for a K3s cluster.">
+    <meta name="description" content="A reproducible baseline runbook for provisioning Raspberry Pi 4 nodes to support a K3s Kubernetes cluster.">
   
   
-    <meta name="keywords" content="Homelab,Raspberry Pi,Linux,Docker,Infrastructure,">
+    <meta name="keywords" content="Homelab,Raspberry Pi,K3s,Kubernetes,Docker,Networking,">
   
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/pi4-provisioning-sop/">
+  <link rel="canonical" href="http://localhost:1313/posts/pi-cluster-runbook/">
   
   
 
@@ -63,26 +63,27 @@
   
 
   
-  <meta property="og:url" content="http://localhost:1313/posts/pi4-provisioning-sop/">
+  <meta property="og:url" content="http://localhost:1313/posts/pi-cluster-runbook/">
   <meta property="og:site_name" content="Neil&#39;s Tech Blog">
-  <meta property="og:title" content="Raspberry Pi 4 Provisioning SOP">
-  <meta property="og:description" content="A production-grade standard operating procedure for provisioning Raspberry Pi 4 nodes for a K3s cluster.">
+  <meta property="og:title" content="Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning">
+  <meta property="og:description" content="A reproducible baseline runbook for provisioning Raspberry Pi 4 nodes to support a K3s Kubernetes cluster.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-06-04T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-06-04T00:00:00+00:00">
+    <meta property="article:published_time" content="2026-06-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-05T00:00:00+00:00">
     <meta property="article:tag" content="Homelab">
     <meta property="article:tag" content="Raspberry Pi">
-    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="K3s">
+    <meta property="article:tag" content="Kubernetes">
     <meta property="article:tag" content="Docker">
-    <meta property="article:tag" content="Infrastructure">
-      <meta property="og:see_also" content="http://localhost:1313/posts/pi-cluster-runbook/">
+    <meta property="article:tag" content="Networking">
+      <meta property="og:see_also" content="http://localhost:1313/posts/pi4-provisioning-sop/">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Raspberry Pi 4 Provisioning SOP">
-  <meta name="twitter:description" content="A production-grade standard operating procedure for provisioning Raspberry Pi 4 nodes for a K3s cluster.">
+  <meta name="twitter:title" content="Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning">
+  <meta name="twitter:description" content="A reproducible baseline runbook for provisioning Raspberry Pi 4 nodes to support a K3s Kubernetes cluster.">
 
   
   
@@ -235,25 +236,25 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Raspberry Pi 4 Provisioning SOP",
-    "headline": "Raspberry Pi 4 Provisioning SOP",
-    "description": "A production-grade standard operating procedure for provisioning Raspberry Pi 4 nodes for a K3s cluster.",
+    "name": "Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning",
+    "headline": "Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning",
+    "description": "A reproducible baseline runbook for provisioning Raspberry Pi 4 nodes to support a K3s Kubernetes cluster.",
     "inLanguage": "en",
-    "url" : "http://localhost:1313/posts/pi4-provisioning-sop/",
+    "url" : "http://localhost:1313/posts/pi-cluster-runbook/",
     "author" : {
       "@type": "Person",
       "name": "Neil Podoba"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-06-04T00:00:00\u002b00:00",
-    "datePublished": "2026-06-04T00:00:00\u002b00:00",
+    "dateCreated": "2026-06-05T00:00:00\u002b00:00",
+    "datePublished": "2026-06-05T00:00:00\u002b00:00",
     
-    "dateModified": "2026-06-04T00:00:00\u002b00:00",
+    "dateModified": "2026-06-05T00:00:00\u002b00:00",
     
-    "keywords": ["Homelab","Raspberry Pi","Linux","Docker","Infrastructure"],
+    "keywords": ["Homelab","Raspberry Pi","K3s","Kubernetes","Docker","Networking"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "592"
+    "wordCount": "559"
   }]
   </script>
 
@@ -619,7 +620,7 @@
     <header id="single_header" class="mt-5 max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Raspberry Pi 4 Provisioning SOP
+        Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -671,7 +672,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-06-04T00:00:00&#43;00:00">4 June 2026</time><span class="px-2 text-primary-500">&middot;</span><span>592 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+      <time datetime="2026-06-05T00:00:00&#43;00:00">5 June 2026</time><span class="px-2 text-primary-500">&middot;</span><span>559 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
     
 
     
@@ -809,18 +810,18 @@
     
       <div
         class="py-1 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
-        <a href="/posts/pi-cluster-runbook/">
-          Part :
-          Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning
-        </a>
+        Part :
+        This Article
       </div>
     
   
     
       <div
         class="py-1 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
-        Part :
-        This Article
+        <a href="/posts/pi4-provisioning-sop/">
+          Part :
+          Raspberry Pi 4 Provisioning SOP
+        </a>
       </div>
     
   
@@ -831,16 +832,6 @@
 
         <div class="article-content max-w-prose mb-20">
           
-<h1 class="relative group">Raspberry Pi 4 Provisioning SOP (Windows → Infrastructure)
-    <div id="raspberry-pi-4-provisioning-sop-windows--infrastructure" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#raspberry-pi-4-provisioning-sop-windows--infrastructure" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-
 <h2 class="relative group">Objective
     <div id="objective" class="anchor"></div>
     
@@ -850,20 +841,55 @@
     </span>
     
 </h2>
-<p>Provision a Raspberry Pi 4 as a remotely accessible Linux node, install Docker, and deploy a containerized service using Docker Compose.</p>
+<p>Establish a consistent, reproducible baseline for Raspberry Pi nodes to support a future Kubernetes (k3s) cluster. This phase focuses on hardware setup, OS provisioning, networking, and container runtime readiness.</p>
 <hr>
 
-<h1 class="relative group">1. Hardware + Network Setup
-    <div id="1-hardware--network-setup" class="anchor"></div>
+<h2 class="relative group">Architecture Overview
+    <div id="architecture-overview" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-hardware--network-setup" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#architecture-overview" aria-label="Anchor">#</a>
     </span>
     
-</h1>
+</h2>
+<ul>
+<li>Nodes:
+<ul>
+<li>1x Control Plane (Pi4)</li>
+<li>3x Worker Nodes (Pi4)</li>
+</ul>
+</li>
+<li>Network:
+<ul>
+<li>Linksys Router (DHCP)</li>
+<li>Netgear GS308PP Switch</li>
+</ul>
+</li>
+<li>Access:
+<ul>
+<li>SSH via Ubuntu (WSL) on Windows host</li>
+</ul>
+</li>
+<li>OS:
+<ul>
+<li>Debian-based Raspberry Pi OS</li>
+</ul>
+</li>
+</ul>
+<hr>
 
-<h2 class="relative group">Components
+<h2 class="relative group">Phase 1: Hardware Setup
+    <div id="phase-1-hardware-setup" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-1-hardware-setup" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">Components
     <div id="components" class="anchor"></div>
     
     <span
@@ -871,97 +897,107 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#components" aria-label="Anchor">#</a>
     </span>
     
-</h2>
+</h3>
 <ul>
-<li>Raspberry Pi 4</li>
-<li>MicroSD card (≥32GB, 256GB used)</li>
-<li>Ethernet cable</li>
+<li>Raspberry Pi 4 devices</li>
+<li>MicroSD cards (32GB–256GB)</li>
 <li>Netgear GS308PP switch</li>
-<li>Windows desktop (host machine)</li>
+<li>Ethernet cables (Cat5e/Cat6)</li>
+<li>USB-C power supply (multi-port Anker recommended)</li>
 </ul>
 
-<h2 class="relative group">Physical Connections
-    <div id="physical-connections" class="anchor"></div>
+<h3 class="relative group">Physical Topology
+    <div id="physical-topology" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#physical-connections" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#physical-topology" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-<ol>
-<li>Connect Pi → Netgear switch (Ethernet)</li>
-<li>Connect switch → router (Linksys)</li>
-<li>(Optional) Connect desktop → switch</li>
-</ol>
+</h3>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Router (Linksys)
+</span></span><span class="line"><span class="cl">    ↓
+</span></span><span class="line"><span class="cl">Switch (Netgear GS308PP)
+</span></span><span class="line"><span class="cl">    ↓
+</span></span><span class="line"><span class="cl">Pi Nodes (eth0)
+</span></span><span class="line"><span class="cl">    ↓
+</span></span><span class="line"><span class="cl">Windows Desktop (WSL access)</span></span></code></pre></div></div>
 
-<h2 class="relative group">Expected Outcome
-    <div id="expected-outcome" class="anchor"></div>
+<h3 class="relative group">Key Notes
+    <div id="key-notes" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#expected-outcome" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#key-notes" aria-label="Anchor">#</a>
     </span>
     
-</h2>
+</h3>
 <ul>
-<li>Pi receives IP via DHCP from router</li>
-<li>Network LEDs active (green = link, blinking = activity)</li>
+<li>Switch is unmanaged → no configuration required</li>
+<li>All Pis connected via Ethernet (eth0)</li>
+<li>WiFi intentionally disabled for cluster stability</li>
 </ul>
 <hr>
 
-<h1 class="relative group">2. OS Installation (Windows)
-    <div id="2-os-installation-windows" class="anchor"></div>
+<h2 class="relative group">Phase 2: OS Installation
+    <div id="phase-2-os-installation" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-os-installation-windows" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-
-<h2 class="relative group">Tooling
-    <div id="tooling" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#tooling" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-2-os-installation" aria-label="Anchor">#</a>
     </span>
     
 </h2>
+
+<h3 class="relative group">Tool Used
+    <div id="tool-used" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#tool-used" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
 <ul>
 <li>Raspberry Pi Imager (Windows)</li>
 </ul>
 
-<h2 class="relative group">Steps
-    <div id="steps" class="anchor"></div>
+<h3 class="relative group">OS Selection
+    <div id="os-selection" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#steps" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#os-selection" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-<ol>
-<li>Insert MicroSD into Windows machine</li>
-<li>Open Raspberry Pi Imager</li>
-<li>Select:
+</h3>
 <ul>
-<li>OS: Debian-based image (Debian 13 used)</li>
-<li>Storage: MicroSD card</li>
+<li>Raspberry Pi OS (64-bit, Lite preferred)</li>
 </ul>
-</li>
-<li>Configure (advanced options):
+
+<h3 class="relative group">Advanced Configuration (IMPORTANT)
+    <div id="advanced-configuration-important" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#advanced-configuration-important" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
 <ul>
 <li>Enable SSH</li>
 <li>Set username/password</li>
-<li>Configure hostname (e.g., <code>pi4-control-plane</code>)</li>
+<li>Configure hostname per node:
+<ul>
+<li><code>pi4-control-plane</code></li>
+<li><code>pi4-worker-1</code></li>
+<li><code>pi4-worker-2</code></li>
+<li><code>pi4-worker-3</code></li>
 </ul>
 </li>
-<li>Write image to disk</li>
-</ol>
+</ul>
 
-<h2 class="relative group">Validation
+<h3 class="relative group">Validation
     <div id="validation" class="anchor"></div>
     
     <span
@@ -969,531 +1005,342 @@
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#validation" aria-label="Anchor">#</a>
     </span>
     
-</h2>
+</h3>
+<p>After flashing:</p>
 <ul>
-<li><code>bootfs</code> partition appears after write</li>
-<li>No write errors</li>
+<li>Boot Pi</li>
+<li>Confirm activity LED (green blinking)</li>
+<li>Verify network visibility via <code>nmap</code></li>
 </ul>
 <hr>
 
-<h1 class="relative group">3. First Boot + Network Discovery
-    <div id="3-first-boot--network-discovery" class="anchor"></div>
+<h2 class="relative group">Phase 3: Network Discovery
+    <div id="phase-3-network-discovery" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-first-boot--network-discovery" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-
-<h2 class="relative group">Power On
-    <div id="power-on" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#power-on" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-3-network-discovery" aria-label="Anchor">#</a>
     </span>
     
 </h2>
+<p>From Ubuntu (WSL):</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmap -sn 10.252.1.0/24</span></span></code></pre></div></div>
+<p>Identify nodes via:</p>
 <ul>
-<li>Insert SD card into Pi</li>
-<li>Connect power</li>
-</ul>
-
-<h2 class="relative group">On Windows (PowerShell)
-    <div id="on-windows-powershell" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#on-windows-powershell" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">ipconfig</span>
-</span></span><span class="line"><span class="cl"><span class="n">arp</span> <span class="n">-a</span></span></span></code></pre></div></div>
-
-<h2 class="relative group">On Router (preferred)
-    <div id="on-router-preferred" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#on-router-preferred" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<ul>
-<li>Log into router UI (Linksys)</li>
-<li>Identify DHCP lease for Pi</li>
-</ul>
-
-<h2 class="relative group">Expected Outcome
-    <div id="expected-outcome-1" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#expected-outcome-1" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<ul>
-<li>Pi assigned IP (e.g., <code>10.252.1.201</code>)</li>
+<li>Hostnames</li>
+<li>IP addresses assigned via DHCP</li>
 </ul>
 <hr>
 
-<h1 class="relative group">4. SSH Access
-    <div id="4-ssh-access" class="anchor"></div>
+<h2 class="relative group">Phase 4: SSH Access
+    <div id="phase-4-ssh-access" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#4-ssh-access" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-
-<h2 class="relative group">From Windows or WSL
-    <div id="from-windows-or-wsl" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#from-windows-or-wsl" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-4-ssh-access" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh &lt;user&gt;@&lt;pi-ip&gt;</span></span></code></pre></div></div>
-
-<h2 class="relative group">First Connection
-    <div id="first-connection" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#first-connection" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<ul>
-<li>Accept host fingerprint</li>
-<li>Enter password</li>
-</ul>
-
-<h2 class="relative group">Validation
-    <div id="validation-1" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#validation-1" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hostname
-</span></span><span class="line"><span class="cl">whoami
-</span></span><span class="line"><span class="cl">hostname -I</span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh @</span></span></code></pre></div></div>
+<p>If host key mismatch occurs:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -f <span class="s1">&#39;~/.ssh/known_hosts&#39;</span> -R <span class="s1">&#39;&#39;</span></span></span></code></pre></div></div>
 <hr>
 
-<h1 class="relative group">5. System Validation
-    <div id="5-system-validation" class="anchor"></div>
+<h2 class="relative group">Phase 5: Baseline System Configuration
+    <div id="phase-5-baseline-system-configuration" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#5-system-validation" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat /etc/os-release
-</span></span><span class="line"><span class="cl">uname -a</span></span></code></pre></div></div>
-
-<h2 class="relative group">Expected
-    <div id="expected" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#expected" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-5-baseline-system-configuration" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<ul>
-<li>Debian 13 (trixie)</li>
-<li>Hostname matches configured value</li>
-</ul>
-<hr>
 
-<h1 class="relative group">6. Package Management Stabilization
-    <div id="6-package-management-stabilization" class="anchor"></div>
+<h3 class="relative group">Update System
+    <div id="update-system" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#6-package-management-stabilization" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-
-<h2 class="relative group">Issue Encountered
-    <div id="issue-encountered" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#issue-encountered" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<ul>
-<li><code>dpkg</code> lock due to background updates</li>
-</ul>
-
-<h2 class="relative group">Resolution Process
-    <div id="resolution-process" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#resolution-process" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ps -p &lt;pid&gt; -f
-</span></span><span class="line"><span class="cl">top
-</span></span><span class="line"><span class="cl">pgrep -a apt
-</span></span><span class="line"><span class="cl">pgrep -a dpkg</span></span></code></pre></div></div>
-
-<h3 class="relative group">Correct Handling
-    <div id="correct-handling" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#correct-handling" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#update-system" aria-label="Anchor">#</a>
     </span>
     
 </h3>
-<ul>
-<li>Wait for processes to complete</li>
-<li>Avoid removing lock files</li>
-</ul>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade -y</span></span></code></pre></div></div>
 
-<h3 class="relative group">Recovery (if stuck)
-    <div id="recovery-if-stuck" class="anchor"></div>
+<h3 class="relative group">Install Core Tools
+    <div id="install-core-tools" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#recovery-if-stuck" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#install-core-tools" aria-label="Anchor">#</a>
     </span>
     
 </h3>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo <span class="nb">kill</span> -9 &lt;pid&gt;
-</span></span><span class="line"><span class="cl">sudo dpkg --configure -a
-</span></span><span class="line"><span class="cl">sudo apt update</span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install -y curl wget git htop net-tools nmap unzip rfkill</span></span></code></pre></div></div>
 <hr>
 
-<h1 class="relative group">7. Docker Installation
-    <div id="7-docker-installation" class="anchor"></div>
+<h2 class="relative group">Phase 6: Kernel Configuration (cgroups)
+    <div id="phase-6-kernel-configuration-cgroups" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#7-docker-installation" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-6-kernel-configuration-cgroups" aria-label="Anchor">#</a>
     </span>
     
-</h1>
+</h2>
+<p>Edit:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /boot/firmware/cmdline.txt</span></span></code></pre></div></div>
+<p>Ensure the line contains:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1</span></span></code></pre></div></div>
+<p>Reboot:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo reboot</span></span></code></pre></div></div>
+<p>Verify:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat /sys/fs/cgroup/cgroup.controllers</span></span></code></pre></div></div>
+<p>Expected:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">cpuset cpu io memory pids</span></span></code></pre></div></div>
+<hr>
+
+<h2 class="relative group">Phase 7: Disable WiFi (Critical for Cluster Stability)
+    <div id="phase-7-disable-wifi-critical-for-cluster-stability" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-7-disable-wifi-critical-for-cluster-stability" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">Immediate Disable
+    <div id="immediate-disable" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#immediate-disable" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo rfkill block wifi
+</span></span><span class="line"><span class="cl">sudo ip link <span class="nb">set</span> wlan0 down</span></span></code></pre></div></div>
+
+<h3 class="relative group">Prevent DHCP Usage
+    <div id="prevent-dhcp-usage" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#prevent-dhcp-usage" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;denyinterfaces wlan0&#39;</span> <span class="p">|</span> sudo tee -a /etc/dhcpcd.conf</span></span></code></pre></div></div>
+
+<h3 class="relative group">Disable WiFi Services
+    <div id="disable-wifi-services" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#disable-wifi-services" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl stop wpa_supplicant
+</span></span><span class="line"><span class="cl">sudo systemctl disable wpa_supplicant</span></span></code></pre></div></div>
+
+<h3 class="relative group">Persist Disable via systemd
+    <div id="persist-disable-via-systemd" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#persist-disable-via-systemd" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo tee /etc/systemd/system/disable-wifi.service &gt; /dev/null <span class="s">&lt;&lt;EOF
+</span></span></span><span class="line"><span class="cl"><span class="s">[Unit]
+</span></span></span><span class="line"><span class="cl"><span class="s">Description=Disable WiFi
+</span></span></span><span class="line"><span class="cl"><span class="s">After=network.target
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">[Service]
+</span></span></span><span class="line"><span class="cl"><span class="s">Type=oneshot
+</span></span></span><span class="line"><span class="cl"><span class="s">ExecStart=/usr/sbin/rfkill block wifi
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">[Install]
+</span></span></span><span class="line"><span class="cl"><span class="s">WantedBy=multi-user.target
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span></span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl daemon-reload
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> disable-wifi.service</span></span></code></pre></div></div>
+
+<h3 class="relative group">Verification
+    <div id="verification" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#verification" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ip a
+</span></span><span class="line"><span class="cl">rfkill list</span></span></code></pre></div></div>
+<p>Expected:</p>
+<ul>
+<li><code>eth0</code> active with IP</li>
+<li><code>wlan0</code> no IP</li>
+<li><code>Soft blocked: yes</code></li>
+</ul>
+<hr>
+
+<h2 class="relative group">Phase 8: Docker Installation
+    <div id="phase-8-docker-installation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-8-docker-installation" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -fsSL https://get.docker.com -o get-docker.sh
 </span></span><span class="line"><span class="cl">sudo sh get-docker.sh</span></span></code></pre></div></div>
-
-<h2 class="relative group">Configure Non-Root Access
-    <div id="configure-non-root-access" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#configure-non-root-access" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo usermod -aG docker <span class="nv">$USER</span>
-</span></span><span class="line"><span class="cl"><span class="nb">exit</span>
-</span></span><span class="line"><span class="cl">ssh &lt;user&gt;@&lt;pi-ip&gt;</span></span></code></pre></div></div>
-
-<h2 class="relative group">Validation
-    <div id="validation-2" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#validation-2" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
+<p>Add user to Docker group:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo usermod -aG docker <span class="nv">$USER</span></span></span></code></pre></div></div>
+<p>Reconnect session and verify:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run hello-world</span></span></code></pre></div></div>
 <hr>
 
-<h1 class="relative group">8. Project Initialization
-    <div id="8-project-initialization" class="anchor"></div>
+<h2 class="relative group">Phase 9: Network Validation
+    <div id="phase-9-network-validation" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#8-project-initialization" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p ~/homelab-platform
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/homelab-platform</span></span></code></pre></div></div>
-
-<h2 class="relative group">Install Git
-    <div id="install-git" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#install-git" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-9-network-validation" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install -y git
-</span></span><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;&lt;name&gt;&#34;</span>
-</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;&lt;email&gt;&#34;</span></span></span></code></pre></div></div>
-<hr>
-
-<h1 class="relative group">9. GitHub SSH Setup
-    <div id="9-github-ssh-setup" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#9-github-ssh-setup" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t ed25519 -C <span class="s2">&#34;&lt;email&gt;&#34;</span>
-</span></span><span class="line"><span class="cl">cat ~/.ssh/id_ed25519.pub</span></span></code></pre></div></div>
-
-<h2 class="relative group">Add key to GitHub → Settings → SSH and GPG Keys
-    <div id="add-key-to-github--settings--ssh-and-gpg-keys" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#add-key-to-github--settings--ssh-and-gpg-keys" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-
-<h2 class="relative group">Validate
-    <div id="validate" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#validate" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -T git@github.com</span></span></code></pre></div></div>
-<hr>
-
-<h1 class="relative group">10. First Service Deployment (Nginx)
-    <div id="10-first-service-deployment-nginx" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#10-first-service-deployment-nginx" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-
-<h2 class="relative group">Test Container
-    <div id="test-container" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#test-container" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d --name nginx-test -p 8080:80 nginx</span></span></code></pre></div></div>
-
-<h2 class="relative group">Validate
-    <div id="validate-1" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#validate-1" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
+<p>Check interfaces:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ip a
+</span></span><span class="line"><span class="cl">ip route</span></span></code></pre></div></div>
+<p>Confirm:</p>
 <ul>
-<li>Browser: <code>http://&lt;pi-ip&gt;:8080</code></li>
+<li>Single interface (<code>eth0</code>)</li>
+<li>No WiFi routing</li>
+<li>Default gateway via router</li>
 </ul>
 <hr>
 
-<h1 class="relative group">11. Transition to Docker Compose
-    <div id="11-transition-to-docker-compose" class="anchor"></div>
+<h2 class="relative group">Phase 10: Troubleshooting Lessons Learned
+    <div id="phase-10-troubleshooting-lessons-learned" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#11-transition-to-docker-compose" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-
-<h2 class="relative group">docker-compose.yml
-    <div id="docker-composeyml" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#docker-composeyml" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-10-troubleshooting-lessons-learned" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">nginx</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nginx:latest</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">nginx-test</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;8080:80&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span></span></span></code></pre></div></div>
 
-<h2 class="relative group">Resolve Conflict (if needed)
-    <div id="resolve-conflict-if-needed" class="anchor"></div>
+<h3 class="relative group">Issue: SSH &ldquo;Host Identification Changed&rdquo;
+    <div id="issue-ssh-host-identification-changed" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#resolve-conflict-if-needed" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker rm -f nginx-test</span></span></code></pre></div></div>
-
-<h2 class="relative group">Deploy
-    <div id="deploy" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#deploy" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker compose up -d
-</span></span><span class="line"><span class="cl">docker ps</span></span></code></pre></div></div>
-<hr>
-
-<h1 class="relative group">12. Repository Integration
-    <div id="12-repository-integration" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#12-repository-integration" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git init
-</span></span><span class="line"><span class="cl">git remote add origin git@github.com:&lt;username&gt;/homelab-platform.git
-</span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Initial homelab setup with nginx service&#34;</span>
-</span></span><span class="line"><span class="cl">git push -u origin main</span></span></code></pre></div></div>
-<hr>
-
-<h1 class="relative group">Troubleshooting Reference
-    <div id="troubleshooting-reference" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#troubleshooting-reference" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-
-<h2 class="relative group">Blink Pi to Locate Faulty Nodes
-    <div id="blink-pi-to-locate-faulty-nodes" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#blink-pi-to-locate-faulty-nodes" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> none <span class="p">|</span> sudo tee /sys/class/leds/led0/trigger
-</span></span><span class="line"><span class="cl"><span class="k">while</span> true<span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="m">1</span> <span class="p">|</span> sudo tee /sys/class/leds/led0/brightness<span class="p">;</span> sleep 0.5<span class="p">;</span> <span class="nb">echo</span> <span class="m">0</span> <span class="p">|</span> sudo tee /sys/class/leds/led0/brightness<span class="p">;</span> sleep 0.5<span class="p">;</span> <span class="k">done</span></span></span></code></pre></div></div>
-
-<h3 class="relative group">Once discovered
-    <div id="once-discovered" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#once-discovered" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#issue-ssh-host-identification-changed" aria-label="Anchor">#</a>
     </span>
     
 </h3>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Ctrl + C
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> mmc0 <span class="p">|</span> sudo tee /sys/class/leds/led0/trigger</span></span></code></pre></div></div>
+<ul>
+<li>Cause: Reimaged device or IP reassignment</li>
+<li>Fix:</li>
+</ul>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -R </span></span></code></pre></div></div>
 <hr>
 
-<h2 class="relative group">No IP Address (169.254.x.x)
-    <div id="no-ip-address-169254xx" class="anchor"></div>
+<h3 class="relative group">Issue: Multiple IPs per Node
+    <div id="issue-multiple-ips-per-node" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#no-ip-address-169254xx" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#issue-multiple-ips-per-node" aria-label="Anchor">#</a>
     </span>
     
-</h2>
+</h3>
 <ul>
-<li>Cause: No DHCP</li>
-<li>Fix: Ensure switch → router connection</li>
+<li>Cause: WiFi + Ethernet both active</li>
+<li>Impact:
+<ul>
+<li>Routing inconsistencies</li>
+<li>Cluster instability</li>
+</ul>
+</li>
+<li>Fix: Disable WiFi completely</li>
 </ul>
 <hr>
 
-<h2 class="relative group">Cannot SSH (Connection Refused)
-    <div id="cannot-ssh-connection-refused" class="anchor"></div>
+<h3 class="relative group">Issue: Docker Permission Denied
+    <div id="issue-docker-permission-denied" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#cannot-ssh-connection-refused" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#issue-docker-permission-denied" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install -y openssh-server
-</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> ssh
-</span></span><span class="line"><span class="cl">sudo systemctl start ssh</span></span></code></pre></div></div>
-<hr>
-
-<h2 class="relative group">Docker Permission Denied
-    <div id="docker-permission-denied" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#docker-permission-denied" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
+</h3>
+<ul>
+<li>Cause: User not in docker group</li>
+<li>Fix:</li>
+</ul>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo usermod -aG docker <span class="nv">$USER</span></span></span></code></pre></div></div>
 <hr>
 
-<h2 class="relative group">Error Cannot Write to Disk
-    <div id="error-cannot-write-to-disk" class="anchor"></div>
+<h3 class="relative group">Issue: dpkg Lock Errors
+    <div id="issue-dpkg-lock-errors" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#error-cannot-write-to-disk" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#issue-dpkg-lock-errors" aria-label="Anchor">#</a>
     </span>
     
-</h2>
-
-<h2 class="relative group">Port Not Accessible
-    <div id="port-not-accessible" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#port-not-accessible" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker ps
-</span></span><span class="line"><span class="cl">docker logs &lt;container&gt;</span></span></code></pre></div></div>
+</h3>
+<ul>
+<li>Cause: Background apt process</li>
+<li>Fix: Wait or complete pending configuration</li>
+</ul>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo dpkg --configure -a</span></span></code></pre></div></div>
 <hr>
 
-<h1 class="relative group">Final State
-    <div id="final-state" class="anchor"></div>
+<h2 class="relative group">Phase 1 Completion Criteria
+    <div id="phase-1-completion-criteria" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#final-state" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#phase-1-completion-criteria" aria-label="Anchor">#</a>
     </span>
     
-</h1>
+</h2>
+<p>All nodes must meet:</p>
 <ul>
-<li>Pi accessible via SSH</li>
-<li>Docker installed and functional</li>
-<li>GitHub integration complete</li>
-<li>Service deployed via Docker Compose</li>
-<li>Node designated as <code>pi4-control-plane</code></li>
+<li><input checked="" disabled="" type="checkbox"> Reachable via SSH</li>
+<li><input checked="" disabled="" type="checkbox"> Unique hostname assigned</li>
+<li><input checked="" disabled="" type="checkbox"> System updated</li>
+<li><input checked="" disabled="" type="checkbox"> WiFi disabled permanently</li>
+<li><input checked="" disabled="" type="checkbox"> Single network interface (eth0)</li>
+<li><input checked="" disabled="" type="checkbox"> Time synchronized</li>
+<li><input checked="" disabled="" type="checkbox"> cgroups enabled (memory present)</li>
+<li><input checked="" disabled="" type="checkbox"> Docker installed and functional</li>
+</ul>
+<hr>
+
+<h2 class="relative group">Next Phase
+    <div id="next-phase" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#next-phase" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>Phase 2 will include:</p>
+<ul>
+<li>Static IP assignment</li>
+<li>SSH key-based authentication</li>
+<li>k3s control plane deployment</li>
+<li>Worker node cluster join</li>
 </ul>
 
           
@@ -1514,18 +1361,18 @@
     
       <div
         class="py-1 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
-        <a href="/posts/pi-cluster-runbook/">
-          Part :
-          Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning
-        </a>
+        Part :
+        This Article
       </div>
     
   
     
       <div
         class="py-1 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
-        Part :
-        This Article
+        <a href="/posts/pi4-provisioning-sop/">
+          Part :
+          Raspberry Pi 4 Provisioning SOP
+        </a>
       </div>
     
   
@@ -1553,21 +1400,21 @@
       <div class="flex justify-between pt-3">
         <span class="flex flex-col">
           
-        </span>
-        <span class="flex flex-col items-end">
-          
             <a
-              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-              href="/posts/pi-cluster-runbook/">
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/pi4-provisioning-sop/">
               <span class="leading-6">
-                Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Raspberry Pi 4 Provisioning SOP
               </span>
             </a>
             
-              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                <time datetime="2026-06-05T00:00:00&#43;00:00">5 June 2026</time>
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2026-06-04T00:00:00&#43;00:00">4 June 2026</time>
               </span>
             
+          
+        </span>
+        <span class="flex flex-col items-end">
           
         </span>
       </div>

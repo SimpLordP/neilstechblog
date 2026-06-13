@@ -1,3 +1,3 @@
 ---
-title: "Neils Tech Blog"
+title: "Neil's Tech Blog"
 ---

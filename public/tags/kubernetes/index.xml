@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Neil&#39;s Tech Blog</title>
-    <link>http://localhost:1313/tags/docker/</link>
-    <description>Recent content in Docker on Neil&#39;s Tech Blog</description>
+    <title>Kubernetes on Neil&#39;s Tech Blog</title>
+    <link>http://localhost:1313/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on Neil&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>npodoba2@gmail.com (Neil Podoba)</managingEditor>
     <webMaster>npodoba2@gmail.com (Neil Podoba)</webMaster>
     <copyright>© 2026 Neil Podoba</copyright>
-    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning</title>
@@ -17,16 +17,6 @@
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <author>npodoba2@gmail.com (Neil Podoba)</author>
       <guid>http://localhost:1313/posts/pi-cluster-runbook/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Raspberry Pi 4 Provisioning SOP</title>
-      <link>http://localhost:1313/posts/pi4-provisioning-sop/</link>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <author>npodoba2@gmail.com (Neil Podoba)</author>
-      <guid>http://localhost:1313/posts/pi4-provisioning-sop/</guid>
       <description></description>
       
     </item>
