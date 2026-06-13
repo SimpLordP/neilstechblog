@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Neils Tech Blog on Neil&#39;s Tech Blog</title>
+    <title>Neil&#39;s Tech Blog</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Neils Tech Blog on Neil&#39;s Tech Blog</description>
+    <description>Recent content on Neil&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>npodoba2@gmail.com (Neil Podoba)</managingEditor>
@@ -13,20 +13,30 @@
     
     <item>
       <title>Raspberry Pi Cluster Runbook - Phase 1: Node Provisioning</title>
-      <link>http://localhost:1313/posts/pi-cluster-runbook/</link>
+      <link>http://localhost:1313/homelab/pi-cluster-runbook/</link>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <author>npodoba2@gmail.com (Neil Podoba)</author>
-      <guid>http://localhost:1313/posts/pi-cluster-runbook/</guid>
+      <guid>http://localhost:1313/homelab/pi-cluster-runbook/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hello, World!</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <author>npodoba2@gmail.com (Neil Podoba)</author>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Raspberry Pi 4 Provisioning SOP</title>
-      <link>http://localhost:1313/posts/pi4-provisioning-sop/</link>
+      <link>http://localhost:1313/homelab/pi4-provisioning-sop/</link>
       <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
       <author>npodoba2@gmail.com (Neil Podoba)</author>
-      <guid>http://localhost:1313/posts/pi4-provisioning-sop/</guid>
+      <guid>http://localhost:1313/homelab/pi4-provisioning-sop/</guid>
       <description></description>
       
     </item>
