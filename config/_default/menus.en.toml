@@ -27,3 +27,8 @@
   name = "15-Min Teardowns"
   pageRef = "15min-teardowns"
   weight = 60
+
+[[main]]
+  name = "AI Projects"
+  pageRef = "ai"
+  weight = 55

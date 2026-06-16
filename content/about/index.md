@@ -1,11 +1,4 @@
----
-title: "Hello, World!"
-date: 2026-06-04
-tags: ["Cloud"]
-description: "About Me - Neil Podoba"
-showDate: false
-showReadingTime: false
-showWordCount: false
+layout: "simple"
 ---
 
 # About Me
