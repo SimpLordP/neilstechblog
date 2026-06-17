@@ -9,7 +9,17 @@
     <managingEditor>npodoba2@gmail.com (Neil Podoba)</managingEditor>
     <webMaster>npodoba2@gmail.com (Neil Podoba)</webMaster>
     <copyright>© 2026 Neil Podoba</copyright>
-    <atom:link href="http://localhost:1313/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Backing Up Your Homelab to AWS S3 with the AWS CLI</title>
+      <link>http://localhost:1313/aws/homelab-backup-to-s3/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <author>npodoba2@gmail.com (Neil Podoba)</author>
+      <guid>http://localhost:1313/aws/homelab-backup-to-s3/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

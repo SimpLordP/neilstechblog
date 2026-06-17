@@ -24,7 +24,7 @@
   weight = 50
 
 [[main]]
-  name = "15-Min Teardowns"
+  name = "Ops Drop"
   pageRef = "15min-teardowns"
   weight = 60
 
