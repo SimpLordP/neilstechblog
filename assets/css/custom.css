@@ -16,3 +16,7 @@
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
 }
+
+.min-w-0.min-h-0.max-w-prose.w-full {
+  max-width: 100% !important;
+}
