@@ -1,3 +1,18 @@
 .max-w-prose {
   max-width: 120ch !important;
 }
+
+.article-link--simple {
+  background-color: #161b22 !important;
+  border: 1px solid #21262d !important;
+  border-radius: 0.8rem !important;
+  padding: 1.4rem 2rem !important;
+  margin-bottom: 1rem !important;
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease !important;
+}
+
+.article-link--simple:hover {
+  border-color: #388e3c !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}

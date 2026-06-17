@@ -6,8 +6,8 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "avocado"
-defaultAppearance = "light" # valid options: light or dark
-autoSwitchAppearance = true
+defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = false
 
 enableA11y = false
 enableSearch = true
@@ -62,8 +62,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showRecentItems = 5
   showMoreLink = false
   showMoreLinkDest = "/posts/"
-  cardView = true
-  cardViewScreenWidth = true
+  cardView = false
+  cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
 
@@ -115,8 +115,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showCards = false
   orderByWeight = false
   groupByYear = true
-  cardView = true
-  cardViewScreenWidth = true
+  cardView = false
+  cardViewScreenWidth = false
   constrainItemsWidth = false
 
 [sitemap]
@@ -132,7 +132,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showViews = false
   showLikes = false
   showTableOfContents = false
-  cardView = true
+  cardView = false
 
 [term]
   showHero = false
@@ -144,8 +144,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showLikes = false
   showTableOfContents = true
   groupByYear = false
-  cardView = true
-  cardViewScreenWidth = true
+  cardView = false
+  cardViewScreenWidth = false
 
 [firebase]
   # apiKey = "XXXXXX"
