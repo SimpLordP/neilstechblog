@@ -4,6 +4,7 @@ date: 2026-06-16
 draft: false
 tags: ["Homelab", "Raspberry Pi", "Hardware", "Networking"]
 series: ["Homelab Hero"]
+summary: "Part 1 of building a 4-node Raspberry Pi K3s cluster. Hardware choices, rack build, and physical setup."
 description: "Part 1 of building a 4-node Raspberry Pi K3s cluster in a 10-inch mini-rack. Starting with the hardware choices and physical build."
 ---
 

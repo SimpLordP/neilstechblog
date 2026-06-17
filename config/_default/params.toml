@@ -62,8 +62,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showRecentItems = 5
   showMoreLink = false
   showMoreLinkDest = "/posts/"
-  cardView = false
-  cardViewScreenWidth = false
+  cardView = true
+  cardViewScreenWidth = true
   layoutBackgroundBlur = false # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
 
@@ -115,8 +115,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showCards = false
   orderByWeight = false
   groupByYear = true
-  cardView = false
-  cardViewScreenWidth = false
+  cardView = true
+  cardViewScreenWidth = true
   constrainItemsWidth = false
 
 [sitemap]
@@ -132,7 +132,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showViews = false
   showLikes = false
   showTableOfContents = false
-  cardView = false
+  cardView = true
 
 [term]
   showHero = false
@@ -144,8 +144,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showLikes = false
   showTableOfContents = true
   groupByYear = false
-  cardView = false
-  cardViewScreenWidth = false
+  cardView = true
+  cardViewScreenWidth = true
 
 [firebase]
   # apiKey = "XXXXXX"

@@ -1,7 +1,13 @@
+---
+title: "Hello, World!"
+date: 2026-06-04
+tags: ["Cloud"]
+description: "About Me - Neil Podoba"
+showDate: false
+showReadingTime: false
+showWordCount: false
 layout: "simple"
 ---
-
-# About Me
 
 My name is Neil Podoba. I'm a Cloud Infrastructure Engineer and Amazon Dedicated Cloud Engineer
 supporting AWS Public Sector and Department of Defense environments. I hold an adjudicated
@@ -80,6 +86,4 @@ Throughout my career I've built hands-on experience with:
 <a href="https://www.credly.com/org/red-hat-inc/badge/red-hat-certified-system-administrator-rhcsa" target="_blank"><img src="https://images.credly.com/size/200x200/images/572de0ba-2c59-4816-a59d-b0e1687e45ee/image.png" style="width:150px;height:150px;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" alt="RHCSA"></a>
 </div>
 
-## The Homelab
 
-Everything on this blog is built on real hardware. I run
