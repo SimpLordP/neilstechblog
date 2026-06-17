@@ -29,6 +29,6 @@
   weight = 60
 
 [[main]]
-  name = "AI Projects"
+  name = "AI/ML"
   pageRef = "ai"
   weight = 55
