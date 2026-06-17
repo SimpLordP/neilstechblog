@@ -40,7 +40,7 @@ aws configure
 ```
 
 You will be prompted for:
-
+```bash
 AWS Access Key ID: <your-key>
 
 AWS Secret Access Key: <your-secret>
@@ -48,6 +48,7 @@ AWS Secret Access Key: <your-secret>
 Default region name: us-east-1
 
 Default output format: json
+```
 
 # Creating Your S3 Bucket
 

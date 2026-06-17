@@ -1,4 +1,4 @@
 ---
 title: "Networking"
-description: "Deep dives into networking concepts, architecture, and hands-on implementation. From eliminating double NAT to VLANs, DNS, and Layer 2 security — real networking problems solved on real hardware."
+description: "Explore core networking concepts through hands-on implementation guides. From eliminating double NAT to configuring VLANs and Layer 2 security, discover how real networks are built and secured."
 ---
