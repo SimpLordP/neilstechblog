@@ -17,7 +17,7 @@ enableStructuredBreadcrumbs = false
 
 replyByEmail = false
 
-# mainSections = ["section1", "section2"]
+mainSections = ["homelab", "aws", "devops", "networking", "ai", "15min-teardowns"]
 # robots = ""
 
 disableImageOptimization = false
